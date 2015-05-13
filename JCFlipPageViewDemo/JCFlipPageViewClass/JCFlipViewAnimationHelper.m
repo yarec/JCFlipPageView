@@ -12,7 +12,7 @@
 
 #define kDefaultBgPageColor             [UIColor darkGrayColor]
 #define kProgressAnimationDuration      0.5f
-#define kSwipeReduceRate                0.8f
+#define kSwipeReduceRate                0.5f
 #define kFlipToBgMaxProgress            0.3f
 
 @interface JCFlipViewAnimationHelper ()
@@ -135,7 +135,9 @@
                 if (!_isAnimationInited)
                 {
                     _currFlipDirection = ((translationY > 0.0f) ? kEFlipDirectionToPrePage : kEFlipDirectionToNextPage);
+                    double t1 = clock();
                     canProgressAnimation = [self beginFlipAnimationForDirection:_currFlipDirection];
+                    double t2 = t(t1, "canProgressAnimation ");
                 }else{}
                 
                 if (canProgressAnimation)
@@ -203,7 +205,7 @@
                 else
                 {
                     // 翻页超过一半则继续完成翻页，否则翻回原来页面
-                    if (fabs((translationY + [recognizer velocityInView:_hostView].y / 4) / _hostView.bounds.size.height) > 0.5f)
+                    if (fabs((translationY + [recognizer velocityInView:_hostView].y / 4) / _hostView.bounds.size.height) > (kSwipeReduceRate * 0.5f) )
                     {
                         [self progressFlipAnimation:1.0f cleanupWhenCompleted:YES];
                     }
@@ -336,7 +338,8 @@
                     }else{}
                 }
                 
-                UIImage *currImg = [self snapshotFromView:currView];
+                //UIImage *currImg = [self snapshotFromView:currView];
+                UIImage *currImg = [self.dataSource flipViewAnimationHelper:self getSnapshotForPageIndex:currViewIndex];
                 if (!currImg)
                 {
                     currImg = [self snapshotFromView:currView];
@@ -366,12 +369,14 @@
                     nextImg = [self.dataSource flipViewAnimationHelper:self getSnapshotForPageIndex:nextViewIndex];
                     if (!nextImg)
                     {
+//                        NSLog(@"snapshot nextView");
                         nextImg = [self snapshotFromView:nextView];
                         [self.delegate flipViewAnimationHelper:self pageSnapshot:nextImg forPageIndex:nextViewIndex];
                     }else{}
                 }
                 
-                UIImage *currImg = [self snapshotFromView:currView];
+                //UIImage *currImg = [self snapshotFromView:currView];
+                UIImage *currImg = [self.dataSource flipViewAnimationHelper:self getSnapshotForPageIndex:currViewIndex];
                 if (!currImg)
                 {
                     currImg = [self snapshotFromView:currView];
@@ -610,7 +615,11 @@
 
 
 
-
+double t(double last, char* key){
+    clock_t now = clock();
+//    printf("time:%fs \t key:%s \n", (last != 0) ? (double)(now - last) / CLOCKS_PER_SEC : 0, key);
+    return now;
+}
 
 
 

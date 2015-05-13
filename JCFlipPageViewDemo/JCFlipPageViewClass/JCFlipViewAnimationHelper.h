@@ -26,6 +26,7 @@ typedef NS_ENUM(NSUInteger, EFlipDirection)
 
 - (void)flipToDirection:(EFlipDirection)direction toPageNum:(NSUInteger)pageNum;
 - (void)flipToDirection:(EFlipDirection)direction toPageNum:(NSUInteger)pageNum duration:(CGFloat)duration;
+- (UIImage*)snapshotFromView:(UIView *)view;
 
 
 @end
