@@ -27,7 +27,7 @@
 //  Created by Simon Blommegård on 2011-12-10.
 //  Copyright 2011 Simon Blommegård. All rights reserved.
 //
-
+#import <UIKit/UIKit.h>
 #import "SBGradientOverlayLayer.h"
 
 @interface SBGradientOverlayLayer ()

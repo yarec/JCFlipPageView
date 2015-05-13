@@ -38,6 +38,9 @@
 		73BFBB801B0357D3009EE5CB /* JCFlipPageView.m in Sources */ = {isa = PBXBuildFile; fileRef = 6EAADD921994DC2200E35231 /* JCFlipPageView.m */; };
 		73BFBB811B0357D3009EE5CB /* JCFlipViewAnimationHelper.h in Sources */ = {isa = PBXBuildFile; fileRef = 6EAADD931994DC2200E35231 /* JCFlipViewAnimationHelper.h */; };
 		73BFBB821B0357D4009EE5CB /* JCFlipViewAnimationHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 6EAADD941994DC2200E35231 /* JCFlipViewAnimationHelper.m */; };
+		73BFBB831B035E8C009EE5CB /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6EA33FEA1993879A0042B7F0 /* UIKit.framework */; };
+		73BFBB841B035E97009EE5CB /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6EA33FE81993879A0042B7F0 /* CoreGraphics.framework */; };
+		73BFBB851B035EA4009EE5CB /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6EA33FE61993879A0042B7F0 /* Foundation.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -147,6 +150,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				73BFBB851B035EA4009EE5CB /* Foundation.framework in Frameworks */,
+				73BFBB841B035E97009EE5CB /* CoreGraphics.framework in Frameworks */,
+				73BFBB831B035E8C009EE5CB /* UIKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

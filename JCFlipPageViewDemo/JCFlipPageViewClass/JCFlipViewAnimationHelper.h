@@ -5,7 +5,7 @@
 //  Created by Jimple on 14-8-8.
 //  Copyright (c) 2014年 JimpleChen. All rights reserved.
 //
-
+#import <UIKit/UIKit.h>
 #import <Foundation/Foundation.h>
 
 typedef NS_ENUM(NSUInteger, EFlipDirection)
