@@ -30,17 +30,17 @@
 		73BFBB6F1B0357BA009EE5CB /* JCFlipPageVTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73BFBB6E1B0357BA009EE5CB /* JCFlipPageVTests.swift */; };
 		73BFBB721B0357BA009EE5CB /* JCFlipPageV.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73BFBB5B1B0357B9009EE5CB /* JCFlipPageV.framework */; };
 		73BFBB731B0357BA009EE5CB /* JCFlipPageV.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 73BFBB5B1B0357B9009EE5CB /* JCFlipPageV.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		73BFBB7B1B0357D3009EE5CB /* SBGradientOverlayLayer.h in Sources */ = {isa = PBXBuildFile; fileRef = 6E3C342719B2C1E3006D3B2B /* SBGradientOverlayLayer.h */; };
 		73BFBB7C1B0357D3009EE5CB /* SBGradientOverlayLayer.m in Sources */ = {isa = PBXBuildFile; fileRef = 6E3C342819B2C1E3006D3B2B /* SBGradientOverlayLayer.m */; };
-		73BFBB7D1B0357D3009EE5CB /* JCFlipPage.h in Sources */ = {isa = PBXBuildFile; fileRef = 6EAADD8F1994DC2200E35231 /* JCFlipPage.h */; };
 		73BFBB7E1B0357D3009EE5CB /* JCFlipPage.m in Sources */ = {isa = PBXBuildFile; fileRef = 6EAADD901994DC2200E35231 /* JCFlipPage.m */; };
-		73BFBB7F1B0357D3009EE5CB /* JCFlipPageView.h in Sources */ = {isa = PBXBuildFile; fileRef = 6EAADD911994DC2200E35231 /* JCFlipPageView.h */; };
 		73BFBB801B0357D3009EE5CB /* JCFlipPageView.m in Sources */ = {isa = PBXBuildFile; fileRef = 6EAADD921994DC2200E35231 /* JCFlipPageView.m */; };
-		73BFBB811B0357D3009EE5CB /* JCFlipViewAnimationHelper.h in Sources */ = {isa = PBXBuildFile; fileRef = 6EAADD931994DC2200E35231 /* JCFlipViewAnimationHelper.h */; };
 		73BFBB821B0357D4009EE5CB /* JCFlipViewAnimationHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 6EAADD941994DC2200E35231 /* JCFlipViewAnimationHelper.m */; };
 		73BFBB831B035E8C009EE5CB /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6EA33FEA1993879A0042B7F0 /* UIKit.framework */; };
 		73BFBB841B035E97009EE5CB /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6EA33FE81993879A0042B7F0 /* CoreGraphics.framework */; };
 		73BFBB851B035EA4009EE5CB /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6EA33FE61993879A0042B7F0 /* Foundation.framework */; };
+		73BFBB891B036822009EE5CB /* SBGradientOverlayLayer.h in Headers */ = {isa = PBXBuildFile; fileRef = 6E3C342719B2C1E3006D3B2B /* SBGradientOverlayLayer.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		73BFBB8A1B036822009EE5CB /* JCFlipPage.h in Headers */ = {isa = PBXBuildFile; fileRef = 6EAADD8F1994DC2200E35231 /* JCFlipPage.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		73BFBB8B1B036822009EE5CB /* JCFlipPageView.h in Headers */ = {isa = PBXBuildFile; fileRef = 6EAADD911994DC2200E35231 /* JCFlipPageView.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		73BFBB8C1B036822009EE5CB /* JCFlipViewAnimationHelper.h in Headers */ = {isa = PBXBuildFile; fileRef = 6EAADD931994DC2200E35231 /* JCFlipViewAnimationHelper.h */; settings = {ATTRIBUTES = (Public, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -310,6 +310,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				73BFBB601B0357BA009EE5CB /* JCFlipPageV.h in Headers */,
+				73BFBB891B036822009EE5CB /* SBGradientOverlayLayer.h in Headers */,
+				73BFBB8A1B036822009EE5CB /* JCFlipPage.h in Headers */,
+				73BFBB8B1B036822009EE5CB /* JCFlipPageView.h in Headers */,
+				73BFBB8C1B036822009EE5CB /* JCFlipViewAnimationHelper.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -494,13 +498,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				73BFBB7B1B0357D3009EE5CB /* SBGradientOverlayLayer.h in Sources */,
 				73BFBB7C1B0357D3009EE5CB /* SBGradientOverlayLayer.m in Sources */,
-				73BFBB7D1B0357D3009EE5CB /* JCFlipPage.h in Sources */,
 				73BFBB7E1B0357D3009EE5CB /* JCFlipPage.m in Sources */,
-				73BFBB7F1B0357D3009EE5CB /* JCFlipPageView.h in Sources */,
 				73BFBB801B0357D3009EE5CB /* JCFlipPageView.m in Sources */,
-				73BFBB811B0357D3009EE5CB /* JCFlipViewAnimationHelper.h in Sources */,
 				73BFBB821B0357D4009EE5CB /* JCFlipViewAnimationHelper.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
