@@ -16,4 +16,6 @@ FOUNDATION_EXPORT const unsigned char JCFlipPageVVersionString[];
 
 // In this header, you should import all the public headers of your framework using statements like #import <JCFlipPageV/PublicHeader.h>
 
-
+#import "JCFlipPage.h"
+#import "JCFlipPageView.h"
+#import "JCFlipViewAnimationHelper.h"
